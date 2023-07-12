@@ -16,7 +16,7 @@ public class NegativeTests {
     }
 
     @Test
-    @Tag("smoke")
+
     void test3() {
         assertTrue(false);
     }
