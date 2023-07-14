@@ -1,0 +1,15 @@
+Telegram token:6189761568:AAGX8mQVrsRb6pdFWkqgS0e59VIP8eBxjsw
+Chat ID:-1001942793909
+Telegram username:@Very_simple_tests_bot
+
+
+
+
+a. Fetch bot updates and look for the chat id:
+curl https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/getUpdates | jq .message.chat.id
+curl https://api.telegram.org/bot6189761568:AAGX8mQVrsRb6pdFWkqgS0e59VIP8eBxjsw/getUpdates
+
+Send a message using the HTTP API:
+curl -X POST -H 'Content-Type: application/json' -d '{"chat_id": "-1001942793909", "text": "This is a test curwa!", "disable_notification": true}' https://api.telegram.org/bot6189761568:AAGX8mQVrsRb6pdFWkqgS0e59VIP8eBxjsw/sendMessage
+
+java "-DconfigFile=notifications/config.json" -jar allure-notifications-4.2.1.jar
