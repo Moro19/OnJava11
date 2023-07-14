@@ -55,4 +55,5 @@ task smoke_test(type: Test) {
 
 }
 
-task generateAllureReport(type: Exec) { commandLine "allure", "generate build/allure-report" }
+//task generateAllureReport(type: Exec) { commandLine "allure", "generate build/allure-results" }
+
