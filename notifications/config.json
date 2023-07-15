@@ -1,9 +1,10 @@
 {
   "base": {
+    "logo": "",
     "project": "some project",
     "environment": "some env",
     "comment": "some comment",
-    "reportLink": "https://jenkins.autotests.cloud/",
+    "reportLink": "https://jenkins.autotests.cloud",
     "language": "en",
     "messenger": "telegram",
     "allureFolder": "build/reports/allure-report/allureReport/",
