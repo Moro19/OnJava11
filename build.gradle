@@ -52,8 +52,14 @@ task smoke_test(type: Test) {
         includeTags("smoke")
         exclude("simple")
     }
+}
+    task simple_test(type: Test) {
+        useJUnitPlatform {
+            includeTags("simple")
+            exclude("smoke")
+        }
 
 }
 
-//task generateAllureReport(type: Exec) { commandLine "allure", "generate build/allure-results" }
+task generateAllureReport(type: Exec) { commandLine "allure", "generate build/reports/allure-report/allureReport" }
 
